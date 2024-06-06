@@ -1,0 +1,113 @@
+\documentclass[11pt, a4paper]{moderncv}
+\moderncvstyle{banking} 
+\moderncvcolor{blue}
+\usepackage[utf8]{inputenc}
+\usepackage[scale=0.85]{geometry}
+\setlength{\hintscolumnwidth}{3cm} 
+\usepackage{import}
+
+\name{Junhao}{Zhang}
+\title{Machine Learning Software Engineer} 
+\phone[mobile]{+86 (0)132 6290 8770} 
+\email{howiejayzh@gmail.com}
+\social[github]{howiejayz}
+\social[linkedin]{junhao-zh}
+\homepage{www.howiejayz.com}
+
+
+\begin{document}
+
+\makecvtitle
+
+\section{Professional Summary}
+Innovative and results-driven Software Development Engineer specializing in machine learning and GPU programming. Proven expertise in optimizing performance for advanced computing systems, with a strong background in electronic engineering and applied machine learning. Adept at collaborating in high-tech environments to deliver cutting-edge solutions.
+
+\section{Experience}
+\cventry{Mar. 2024--Present}{Senior Software Development Engineer in Data Centre}{\includegraphics[height=1em]{logos/amd.jpeg} AMD}{Shanghai, China}{}{%
+\begin{itemize}
+    \item Optimising LLM training and inference, such as Llama2-7B and Llama2-70B 
+    \item Supporting clients of AMD including Alibaba, Microsoft, and Kuaishou for their AI workload optimisations
+\end{itemize}}
+
+\cventry{Mar. 2022--Mar. 2024}{Software Development Engineer in Data Centre}{\includegraphics[height=1em]{logos/amd.jpeg} AMD}{Shanghai, China}{}{%
+\begin{itemize}
+    \item Participated in the development of \href{https://github.com/ROCm/flash-attention}{\textcolor{blue}{\underline{Flash Attention}}}, which is currently widely used by a variety of users, including Hugging Face, Microsoft, and individual AI developers in open-source communities.
+    \item Spearheaded the optimization of machine learning algorithms through advanced GPU kernel programming and framework development.
+    \item Focused on enhancing software capabilities for AMD GPUs, notably the MI210, MI250 and MI300.
+    \item Contributed to our machine SDK, incorporating technologies like HIP (akin to CUDA) and Composable Kernel.
+\end{itemize}}
+
+\section{Education}
+\cventry{Oct. 2020--Oct. 2021}{MSc. in Applied Machine Learning}{\includegraphics[height=1em]{logos/imperial.jpeg} Imperial College London}{London, UK}{\textit{Merit}}{}
+\cventry{Sept. 2018--Jun. 2020}{BEng. in Electronic Engineering}{\includegraphics[height=1em]{logos/uol.jpeg} University of Liverpool}{Liverpool, UK}{\textit{First-Class Honours}}{}
+\cventry{Sept. 2016--Jun. 2018}{BEng. in Electronic Science and Technology}{\includegraphics[height=1em]{logos/xjtlu.jpeg} Xi’an Jiaotong-Liverpool University}{Suzhou, China}{\textit{First-Class Honours}}{}
+
+\section{Technical Skills}
+\cvitem{Programming}{C++, CUDA, ROCm HIP, Python}
+\cvitem{Libraries}{PyTorch, TensorFlow, scikit-learn, Numpy, Pandas}
+\cvitem{Tools}{Git, Docker, Vim, Bash, Matlab, Latex}
+\cvitem{Currently Learning}{Next.js, React, Typescript}
+
+\section{Projects}
+\cventry{Nov 2023--Present}{\href{https://github.com/ROCm/inference/tree/r4.0_sd_ort_v2}{\textcolor{blue}{\underline{Stable Diffusion for MLPerf v4.0 Inference Submission}}}}{\includegraphics[height=1em]{logos/amd.jpeg} AMD}{Shanghai, China}{}{
+\begin{itemize}
+    \item Optimized inference for Stable Diffusion XL for images at 1024x1024 on AMD MI300X GPUs.
+    \item Tested different backends including PyTorch with xFormers and Onnxruntime for ROCm.
+    \item Achieved inference speed at 0.40 images/s, which is close to the performance of NVIDIA A100
+\end{itemize}
+}
+
+\cventry{May 2023--Present}{\href{https://github.com/ROCm/flash-attention}{\textcolor{blue}{\underline{Flash Attention For AMD ROCm}}}}{\includegraphics[height=1em]{logos/amd.jpeg} AMD}{Shanghai, China}{}{
+\begin{itemize}
+    \item Led the integration and optimization of the Flash Attention algorithm on AMD MI250 GPUs.
+    \item Utilized PyTorch and Composable Kernel to significantly enhance computational efficiency and GPU utilization.
+    \item Achieved a notable reduction in processing time, contributing to more efficient machine learning operations on GPUs.
+    \item Maintaining the GitHub repository and solving issues from our customers and open-source community users.
+\end{itemize}
+}
+
+\cventry{Jan. 2023--Apr. 2023}{\href{https://github.com/ROCm/inference/tree/junhzhan-r2.0-rnnt-gpu}{\textcolor{blue}{\underline{Enabling the GPU Inference for RNNT}}}}{\includegraphics[height=1em]{logos/amd.jpeg} AMD}{Shanghai, China}{}{
+\begin{itemize}
+    \item Oversaw the adaptation of the RNNT model for GPU-based inference, leveraging MLPerf v2.0 benchmarks.
+    \item Achieved a tenfold increase in processing speed compared to traditional CPU-based methods.
+    \item Enhanced the model's scalability and efficiency, setting a new standard in GPU-accelerated inferencing.
+\end{itemize}
+}
+
+\cventry{Mar. 2022--Dec. 2022}{Investigation of DLRM Performance in HugeCTR and TorchRec}{\includegraphics[height=1em]{logos/amd.jpeg} AMD}{Shanghai, China}{}{
+\begin{itemize}
+    \item Conducted in-depth performance analysis of the DLRM benchmark, focusing on GPU efficiency.
+    \item Compared and evaluated model throughput using TorchRec and PyTorch, identifying key areas for optimization.
+    \item Provided actionable insights for performance improvements in GPU-based machine learning applications.
+\end{itemize}
+}
+
+\cventry{Oct. 2020--Mar. 2021}{\href{https://github.com/howiejayz/Video-Player-Controlled-by-Action-Recognition}{\textcolor{blue}{\underline{EMG-Controlled Video Player}}}}{\includegraphics[height=1em]{logos/imperial.jpeg} Imperial College London}{London, UK}{}{
+\begin{itemize}
+    \item Innovated an EMG-based video player controlled through hand gestures, integrating advanced machine learning algorithms.
+    \item Attained a remarkable 95\% accuracy in gesture prediction, greatly enhancing user interaction.
+    \item Received Class A grade in the MSc program for the project's technical excellence and practical application.
+\end{itemize}
+}
+
+\cventry{Oct. 2020 - Jan. 2021}{\href{https://github.com/howiejayz/SOMAS2020}{\textcolor{blue}{\underline{Multi-Agent System Using Go-Lang}}}}{\includegraphics[height=1em]{logos/imperial.jpeg} Imperial College London}{London, UK}{}{
+\begin{itemize}
+    \item Collaborated in a large-scale team project to develop a multi-agent system with intricate game theory dynamics.
+    \item Designed and programmed a high-performance agent using Go-Lang, demonstrating superior strategy formulation.
+    \item Achieved outstanding performance among competing agents, underscoring effective collaborative and competitive tactics.
+\end{itemize}
+}
+
+\cventry{Nov. 2019 - Dec. 2019}{\href{https://github.com/howiejayz/graph-digitiser}{\textcolor{blue}{\underline{Graph Digitiser with Qt and C++}}}}{\includegraphics[height=1em]{logos/uol.jpeg} University of Liverpool}{Liverpool, UK}{}{
+\begin{itemize}
+    \item Engineered a sophisticated graph digitiser tool in C++ and Qt, catering to a wide range of data visualization needs.
+    \item Enabled accurate digitization of complex image data, including 2D maps and mathematical plots.
+    \item The tool was lauded for its user-friendly interface and precision, earning an 80\% grade for functionality and innovation.
+\end{itemize}
+}
+
+
+\section{Interests}
+\cvitem{}{Hiking, Scuba diving, Photography}
+
+\end{document}
